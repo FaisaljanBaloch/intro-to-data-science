@@ -1,2 +1,3 @@
-# intro-to-data-science
-The repository holds the exercises practices by me.
+# Introduction to Data Science (course)
+
+The repository holds the exercises and tasks done by me.
