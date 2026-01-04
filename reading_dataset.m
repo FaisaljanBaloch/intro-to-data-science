@@ -2,7 +2,7 @@
 filepath = "..\DSwithMATLAB\matlabfilesuk\ch1Introduction\Firm.xlsx";
 
 % import
-Firms = readtable(filepath, "Sheet", "data");
+Firms = readtable(filepath, "Sheet", "data", ReadRowNames=true);
 
 % firms surname starts with CAS
 boo = startsWith(Firms.Surname, "CAS");
@@ -17,3 +17,11 @@ boo1 = startsWith(Firms.Name, 'R');
 boo2 = endsWith(Firms.Name, 'O');
 boo = boo1 & boo2;
 subset3 = Firms(boo, :);
+
+%% Data Visualization
+% A scatter plot to visualize the relationship of Wage wrt Seniority
+
+X=Firms.Seniority;
+Y=Firms.Wage;
+
+scatter(X, Y, "blue", "filled"); % Very exploratory for regression problems
