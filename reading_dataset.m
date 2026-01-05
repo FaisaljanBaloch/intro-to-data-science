@@ -1,5 +1,5 @@
 % firms dataset file path
-filepath = "..\DSwithMATLAB\matlabfilesuk\ch1Introduction\Firm.xlsx";
+filepath = "Firm.xlsx";
 
 % import
 Firms = readtable(filepath, "Sheet", "data", ReadRowNames=true);
